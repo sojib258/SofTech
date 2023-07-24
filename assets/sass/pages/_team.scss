@@ -1,0 +1,144 @@
+// Banner Start
+.bannerTeam{
+    @extend %whp;
+    background: linear-gradient(rgba(52, 73, 94,.5),rgba(52, 73, 94,.5)), url("../images/team/1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50vh;
+    @include display-all;
+    &__head{
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        font-size: .8rem;
+        color: $white-color;
+    }&__link{
+        @include transition(.3s);
+        color: $white-color;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+// Banner End
+
+// Team Management Area Start
+.teamManagement{
+    @extend %whp;
+    background: $deep-black;
+    &__heading{
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 0px;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        color: $light-white;
+        font-size: .9rem;
+        margin-bottom: 50px;
+    }&__images{
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border-radius: 4px;
+    }&__img{
+        width: 100%;
+        height: auto;
+        @include transition(.8s);
+        &:hover{
+            transform: scale(1.2);
+        }
+    }&__contentHead{
+        color: $primary-color;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0;
+        @include small{
+            font-size: 1.6rem;
+        }
+    }&__sub{
+        color: $deep-primary;
+        font-size: .9rem;
+    }&__des{
+        font-size: .9rem;
+        color: $light-white;
+    }
+}
+// Team Management Area End
+
+// Team Operation Area Start
+.teamOperation{
+    @extend %whp;
+    background: $black-color;
+    &__heading{
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 0px;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        color: $light-white;
+        font-size: .9rem;
+        margin-bottom: 50px;
+    }&__images{
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border-radius: 4px;
+    }&__img{
+        width: 100%;
+        height: auto;
+        @include transition(.8s);
+        &:hover{
+            transform: scale(1.2);
+        }
+    }&__contentHead{
+        color: $primary-color;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 0;
+        @include small{
+            font-size: 1.6rem;
+        }
+    }&__sub{
+        color: $deep-primary;
+        font-size: .9rem;
+    }&__des{
+        font-size: .9rem;
+        color: $light-white;
+    }
+}
+// Team Operation Area End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

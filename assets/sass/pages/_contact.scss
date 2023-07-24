@@ -1,0 +1,134 @@
+// Banner Contact Start
+.bannerContact{
+    @extend %whp;
+    background: linear-gradient(rgba(52, 73, 94,.5),rgba(52, 73, 94,.5)), url("../images/contact/1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50vh;
+    @include display-all;
+    &__head{
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        font-size: .8rem;
+        color: $white-color;
+    }&__link{
+        @include transition(.3s);
+        color: $white-color;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+// Banner Contact End
+
+// Contact Touch Start
+.contactTouch{
+    @extend %whp;
+    background: $black-color;
+    &__head{
+        @extend %head-all;
+        margin-bottom: 30px;
+    }&__para{
+        @extend %para-all;
+        margin-bottom: 50px;
+    }&__form{
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }&__input{
+        display: block;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        border: 1px solid $primary-color;
+        padding: 6px 15px;
+        margin-bottom: 15px;
+        color: $primary-color;
+        border-radius: 4px;
+        &::placeholder{
+            color: $primary-color;
+        }
+    }&__btn{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 6px 15px;
+        width: 100%;
+        height: auto;
+        background-color: $primary-color;
+        color: $deep-black;
+        border: none;
+        border-radius: 4px;
+        @include transition(.4s);
+        &:hover{
+            background-color: $deep-primary;
+            color: $deep-black;
+        }
+    }&__info{
+        @include display-flex;
+        @include align-items-center;
+        padding: 0px 20px;
+        margin-bottom: 30px;
+        &:hover .contactTouch__icon{
+            background: $primary-color;
+            color: $deep-black;
+        }
+    }&__icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        @include display-all;
+        background: $deep-black;
+        font-size: 1.3rem;
+        color: $primary-color;
+        margin-right: 15px;
+        @include transition(.4s);
+        @include small{
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+    }&__infoHead{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 2px;
+        @include small{
+            font-size: 1rem;
+        }
+    }&__infoPara{
+        font-size: .9rem;
+        color: $light-white;
+        @include small{
+            font-size: .8rem;
+        }
+    }
+}
+
+
+// Contact Touch End
+
+
+
+
+
+
+
+
+
+
+
+
+

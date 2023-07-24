@@ -1,0 +1,72 @@
+// Coming Soon Area Start
+.comingSoon{
+    background: linear-gradient(rgba(30, 39, 46,.5),rgba(30, 39, 46,.5)), url("../images/coming/1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 80vh;
+    padding: 50px 0px;
+    @include large{
+        height: auto;
+    }
+    &__head{
+        font-size: 3rem;
+        color: #fff;
+        text-shadow: 2px 2px 5px $primary-color;
+        letter-spacing: 10px;
+        font-weight: bold;
+        @include small{
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+        }@include very-small{
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+    }&__para{
+        font-size: .9rem;
+        color: $white-color;
+        padding: 0px 50px;
+        @include medium{
+            padding: 0px;
+        }@include very-small{
+            font-size: .7rem;
+            letter-spacing: 2px;
+        }
+    }&__count{
+        @include display-all;
+    }&__counted{
+        width: 100px;
+        height: 100px;
+        border: 2px dashed $primary-color;
+        border-radius: 50%;
+        margin: 50px;
+        box-shadow: 2px 5px 5px black;
+        color: $white-color;
+        font-size: .7rem;
+        text-align: center;
+        overflow: hidden;
+        @include small{
+            width: 80px;
+            height: 80px;
+            font-size: .5rem;
+        }
+    }&__num{
+        font-size: 1.8rem;
+        display: block;
+        text-shadow: 1px 1px 5px #1CE2FD;
+        margin-top: 5px;
+        @include small{
+            font-size: 1.2rem;
+        }
+    }&__flex{
+        @include display-flex;
+        @include align-items-center;
+        @include large{
+            @include flex-direction-column;
+        }
+    }
+}
+
+
+// Coming Soon Area End

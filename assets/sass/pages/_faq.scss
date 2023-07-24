@@ -1,0 +1,74 @@
+// Banner Start
+.bannerFaq{
+    @extend %whp;
+    background: linear-gradient(rgba(52, 73, 94,.5),rgba(52, 73, 94,.5)), url("../images/faq/1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 50vh;
+    @include display-all;
+    &__head{
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        font-size: .8rem;
+        color: $white-color;
+    }&__link{
+        @include transition(.3s);
+        color: $white-color;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+// Banner End
+
+// FAQ Area Start
+.faqArea{
+    @extend %whp;
+    background: $black-color;
+    &__head{
+        @extend %head-all;
+    }.accordion-item{
+        border-bottom: 1px solid $deep-black;
+    }.accordion-button{
+        background: $primary-color;
+        color: $deep-black;
+        font-weight: bold;
+        @include small{
+            font-size: .9rem;
+        }
+    }.accordion-body{
+        background: $deep-primary;
+        color: $black-color;
+        @include small{
+            font-size: .8rem;
+        }
+    }
+}
+
+
+// FAQ Area End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

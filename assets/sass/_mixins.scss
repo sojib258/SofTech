@@ -1,0 +1,140 @@
+// display property all
+@mixin display-all{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+
+// just display flex
+@mixin display-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// just justify-content-center
+@mixin justify-content-center{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+// just justify-content-start
+@mixin justify-content-start{
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+// just justify-content-end
+@mixin justify-content-end{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+// just align-items-center
+@mixin align-items-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+// just align-items-start
+@mixin align-items-start{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+     align-items: flex-start
+}
+
+// just align-items-end
+@mixin align-items-end{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+// just flex-direction row
+@mixin flex-direction-row{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+// just flex-direction column
+@mixin flex-direction-column{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+// transition
+@mixin transition ($num){
+    -webkit-transition: all $num ease;
+    -o-transition: all $num ease;
+    transition: all $num ease;
+}
+
+@mixin transform{
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+}
+
+// media query
+// 300px
+@mixin very-small{
+    @media only screen and (max-width: $very-small){
+        @content;
+    }
+}
+
+// 575px
+@mixin small{
+    @media only screen and (max-width: $small){
+        @content;
+    }
+}
+
+// 767px
+@mixin medium{
+    @media only screen and (max-width: $medium){
+        @content;
+    }
+}
+
+// 991px
+@mixin large{
+    @media only screen and (max-width: $large){
+        @content;
+    }
+}
+
+// 1199px
+@mixin very-large{
+    @media only screen and (max-width: $very-large){
+        @content;
+    }
+}
+
+// 1400px
+@mixin extra-large{
+    @media only screen and (max-width: $extra-large){
+        @content;
+    }
+}
+
+@mixin extra-large-2{
+    @media only screen and (min-width: $extra-large){
+        @content;
+    }
+}
+

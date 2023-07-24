@@ -1,0 +1,93 @@
+// Login Form Start
+.loginArea{
+    @extend %whp;
+    background: linear-gradient(rgba(52, 73, 94,.5),rgba(52, 73, 94,.5)), url("../images/login/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__head{
+        text-align: center;
+        font-size: 2.2rem;
+        color: $primary-color;
+        font-weight: bold;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__form{
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+        position: relative;
+    }&__label{
+        margin-bottom: 0px;
+        font-size: .8rem;
+        margin-bottom: 4px;
+    }&__input{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 8px 10px 8px 30px;
+        background: transparent;
+        border: 1px solid $primary-color;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        color: $primary-color;
+        font-size: .8rem;
+        &::placeholder{
+            color: $primary-color;
+            font-size: .8rem;
+            opacity: .5;
+        }
+    }&__envelope{
+        position: absolute;
+        top: 38px;
+        left: 8px;
+        color: $primary-color;
+        opacity: .8;
+        font-size: 1rem;
+    }&__lock{
+        position: absolute;
+        top: 110px;
+        left: 8px;
+        color: $primary-color;
+        opacity: .8;
+        font-size: 1rem;
+    }&__btn{
+        display: block;
+        background: transparent;
+        border: 1px solid $primary-color;
+        padding: 5px 25px;
+        color: $primary-color;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: .8rem;
+        @include transition(.4s);
+        &:hover{
+            background: $primary-color;
+            color: $deep-black;
+        }
+    }&__para{
+        font-size: .8rem;
+        text-align: center;
+        margin: 15px;
+        color: $light-white;
+    }&__link{
+        color: $primary-color;
+        @include transition(.3s);
+        &:hover{
+            color: $deep-primary;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// Login Form End

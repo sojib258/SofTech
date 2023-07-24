@@ -1,0 +1,44 @@
+$primary-color: #00ffee;
+$deep-primary: #3dc7c0;
+$black-color: #17202A;
+$deep-black: #0B0C10;
+$white-color: #fff;
+$light-white: #c4cfde;
+
+
+.primary{
+    color: $primary-color;
+}
+.bg-primary{
+    background-color: $primary-color;
+}
+.d-primary{
+    color: $deep-primary;
+}
+.bg-d-primary{
+    background-color: $deep-primary;
+}
+.black{
+    color: $black-color;
+}
+.bg-black{
+    background-color: $black-color;
+}
+.d-black{
+    color: $deep-black;
+}
+.bg-d-black{
+    background-color: $deep-black;
+}
+.white{
+    color:$white-color;
+}
+.bg-white{
+    background-color: $white-color;
+}
+.l-white{
+    color: $light-white;
+}
+.bg-l-white{
+    background-color: $light-white;
+}

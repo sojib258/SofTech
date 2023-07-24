@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button:focus,input:focus{
+    outline: none!important;
+}
+::selection{
+    background: $primary-color;
+    color: $black-color;
+}
+body{
+    font-family: $font-merri;
+    color: $white-color;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $font-mono;
+}
+p{
+    font-family: $font-merri;
+}
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-moz-scrollbar {
+    width: 10px;
+  }
+  ::-o-scrollbar {
+    width: 10px;
+  }
+  ::-ms-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $black-color;
+  }
+  ::-moz-scrollbar-track {
+    background: $black-color;
+  }
+  ::-o-scrollbar-track {
+    background: $black-color;
+  }
+  ::-ms-scrollbar-track {
+    background: $black-color;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color;
+  }
+  ::-moz-scrollbar-thumb {
+    background: $primary-color;
+  }
+  ::-o-scrollbar-thumb {
+    background: $primary-color;
+  }
+  ::-ms-scrollbar-thumb {
+    background: $primary-color;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $deep-primary;
+  } 
+  ::-moz-scrollbar-thumb:hover {
+    background: $deep-primary;
+  } 
+  ::-o-scrollbar-thumb:hover {
+    background: $deep-primary;
+  } 
+  ::-ms-scrollbar-thumb:hover {
+    background: $deep-primary;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+%whp{
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+// For Button
+%button{
+    display: inline-block;
+	padding: 8px 15px;
+	background: $primary-color;
+	color: #17202a;
+	font-size: .79rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+    font-family: $font-merri;
+	position: relative;
+	transition: color 0.4s linear;
+	-webkit-transition: color 0.4s linear;
+	-moz-transition: color 0.4s linear;
+	-ms-transition: color 0.4s linear;
+	-o-transition: color 0.4s linear;
+	z-index: 1;
+}
+%button-before{
+    position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #17202a;
+	z-index: -1;
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+	transform: scaleX(0);
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	-o-transform: scaleX(0);
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+}
+%button-hover{
+    color: #fff;
+}
+%button-hover-before{
+    transform: scaleX(1.03);
+}
+%button-all{
+    @extend %button;
+    &::before{
+        @extend %button-before;
+    }&:hover{
+        @extend %button-hover;
+    }&:hover::before{
+        @extend %button-hover-before;
+    }
+}
+%head-all{
+    color: $primary-color;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    @include small{
+        font-size: 1.8rem;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 50%;
+        width: 100px;
+        height: 2px;
+        background: $primary-color;
+        @include transform;
+    }&::after{
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 50%;
+        width: 150px;
+        height: 2px;
+        background: $primary-color;
+        @include transform;
+    }
+}
+%para-all{
+    font-size: .9rem;
+    text-align: center;
+    padding: 0px 80px;
+    line-height: 1.8;
+    @include small{
+        font-size: .8rem;
+    }
+    @include medium{
+        padding: 0px 10px;
+    }
+}
+
+%footer-head{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $primary-color;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 5px;
+        left: 0;
+        width: 5px;
+        height: 25px;
+        background: $primary-color;
+    }&::after{
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $primary-color
+    } 
+}
+
+
+
+
+
+
+

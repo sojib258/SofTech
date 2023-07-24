@@ -1,0 +1,158 @@
+// Home Service Area Start
+.serviceHome{
+    @extend %whp;
+    background: linear-gradient(rgba(11, 14, 13, 0.7), rgba(11, 14, 13, 0.7)),url("../images/service/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    @include large{
+        height: 70vh;
+    }
+    @include small{
+        height: auto;
+    }&__content{
+        margin-top: 60px;
+    }&__head{
+        font-size: 3rem;
+        color: $primary-color;
+        font-weight: bold;
+        margin-bottom: 20px;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        font-size: .9rem;
+        margin-bottom: 40px;
+    }&__btn1{
+        display: inline-block;
+        background: $primary-color;
+        color: $deep-black;
+        font-size: .8rem;
+        font-weight: bold;
+        padding: 10px 15px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        @include transition(.4s);
+        border: 2px solid $primary-color;
+        &:hover{
+            background: transparent;
+            color: $primary-color;
+        }
+    }&__btn2{
+        display: inline-block;
+        background: transparent;
+        color: $primary-color;
+        font-size: .8rem;
+        font-weight: bold;
+        padding: 10px 15px;
+        margin-left: 5px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        border: 2px solid $primary-color;
+        @include transition(.4s);
+        &:hover{
+            background: $primary-color;
+            color: $deep-black;
+        }
+    }
+}
+// Home Service Area End
+
+// Service Item Area Start
+.serviceItem{
+    @extend %whp;
+    background: $deep-black;
+    &__allContent{
+        margin-top: -170px;
+        @include large{
+            margin-top: 0;
+        }
+    }&__singleItem{
+        margin-bottom: 50px;
+    }&__images{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }&__img{
+        width: 100%;
+        height: auto;
+        
+        border-radius: 4px;
+        @include transition(.6s);
+        &:hover{
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }&__head{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $primary-color;
+    }&__para{
+        font-size: .9rem;
+        text-align: center;
+        color: $light-white;
+        padding: 0px 10px;
+        @include small{
+            font-size: .8rem;
+        }
+    }
+}
+// Service Item Area End
+
+// Service Solution Area Start
+.serviceSolution{
+    @extend %whp;
+    background-color: $black-color;
+    &__heading{
+        @extend %head-all;
+    }&__para{
+        @extend %para-all;
+        margin-bottom: 50px;
+    }&__singleItem{
+        box-shadow: 0px 0px 25px 0px rgb(25, 62, 63);
+        margin-bottom: 50px;
+    }&__images{
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 35px;
+        overflow: hidden;
+    }&__img{
+        width: 100%;
+        height: auto;
+        @include transition(.8s);
+        &:hover{
+            transform: scale(1.2)
+        }
+    }&__headLink{
+        color: $primary-color;
+        font-size: 1.4rem;
+        font-weight: bold;
+        @include transition(.4s);
+        margin-bottom: 35px;
+        &:hover{
+            color: $deep-primary;
+        }
+    }&__des{
+        color: $light-white;
+        font-size: .9rem;
+        margin-bottom: 35px;
+    }&__link{
+        @extend %button-all;
+        &:hover::before{
+            background: $deep-black;
+        }
+        margin-bottom: 35px;
+    }
+}
+
+// Service Solution Area End
+
+
+

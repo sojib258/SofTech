@@ -1,0 +1,56 @@
+// 404 Area Start
+.banner404{
+    @extend %whp;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("../images/404/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    @include large{
+        height: auto;
+    }&__content{
+        margin-top: 100px;
+        @include small{
+            margin-top: 10px;
+        }
+    }&__head{
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+        color: $white-color;
+        text-shadow: 2px 2px 5px red;
+        @include small{
+            font-size: 1.8rem;
+        }
+    }&__para{
+        text-align: center;
+        font-size: .9rem;
+        @include small{
+            font-size: .8rem;
+        }
+    }&__go{
+        color: $white-color;
+        font-size: .9rem;
+        text-align: center;
+        @include small{
+            font-size: .8rem;
+        }
+    }&__link{
+        color: $primary-color;
+        font-weight: bold;
+        @include transition(.4s);
+        &:hover{
+            color: $deep-primary;
+        }
+    }
+}
+
+
+
+
+
+// 404 Area End
+
+
+
+

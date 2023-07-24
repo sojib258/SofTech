@@ -1,0 +1,50 @@
+// Sign Up Area Start
+.signupArea{
+    @extend %whp;
+    background: linear-gradient(rgba(52, 73, 94,.5),rgba(52, 73, 94,.5)), url("../images/login/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__head{
+        text-align: center;
+        font-size: 2.2rem;
+        color: $primary-color;
+    }&__form{
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+    }&__input{
+        display: block;
+        width: 100%;
+        color: $primary-color;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $primary-color;
+        margin-bottom: 15px;
+        padding: 6px 0px;
+        font-size: .8rem;
+        &::placeholder{
+            color: $primary-color;
+            opacity: .75;
+        }
+    }&__btn{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: .9rem;
+        padding: 8px;
+        background: $primary-color;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        color: $deep-black;
+        @include transition(.4s);
+        &:hover{
+            background-color: $deep-primary;
+            color: $deep-black;
+        }
+    }
+}
+
+// Sign Up Area End
